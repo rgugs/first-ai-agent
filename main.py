@@ -27,9 +27,10 @@ def main():
         input="Why is Boot.dev such a great place to learn backend development? Use one paragraph maximum.",
     )
 
-    print(response.output_text)
-    "models.generate_content"
-    ".text"
+    print(f"User Prompt: {response.output_text}")
+    print(f"Prompt tokens: {response.usage.input_tokens}")
+
+    print(f"Response tokens: {response.usage.output_tokens}")
 
 
 if __name__ == "__main__":
